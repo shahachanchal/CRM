@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CRM automation Test suite">
+	<test name="CRM Application Test cases">
+		<classes>
+			<class name="automation.testcases.HomepageTest"></class>
+			<class name="automation.testcases.LoginpageTest"></class>
+			<class name="automation.testcases.ContactsPageTest"></class>
+		</classes>
+	</test>
+</suite>
+
+
+<!-- right click on this page and click on source>> perform comment/uncommet
+
+1.we created Test Suite for executing all classes (Testes) in one go so that no need to execute each java class.
+2.We can check the TestNg reports in Test-output folder>>index.html>> paste the location from properties into browser
+3.Also we have emailable-report.html  in Test-output folder>> paste the location from properties into browser
+ -->

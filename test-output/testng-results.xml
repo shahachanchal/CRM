@@ -1,105 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="2" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="72209" started-at="2020-07-18T09:55:06Z" finished-at="2020-07-18T09:56:18Z">
+  <suite name="CRM automation Test suite" duration-ms="55950" started-at="2020-07-18T17:54:17Z" finished-at="2020-07-18T17:55:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="72209" started-at="2020-07-18T09:55:06Z" finished-at="2020-07-18T09:56:18Z">
-      <class name="automation.testcases.ContactsPageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:automation.testcases.ContactsPageTest@6f7fd0e6]" name="setup" is-config="true" duration-ms="35776" started-at="2020-07-18T09:55:06Z" finished-at="2020-07-18T09:55:41Z">
+    <test name="CRM Application Test Sanity" duration-ms="55950" started-at="2020-07-18T17:54:17Z" finished-at="2020-07-18T17:55:13Z">
+      <class name="automation.testcases.HomepageTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:automation.testcases.HomepageTest@6f7fd0e6]" name="setup" is-config="true" duration-ms="18296" started-at="2020-07-18T17:54:17Z" finished-at="2020-07-18T17:54:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="ValidateContactlabelTest()[pri:1, instance:automation.testcases.ContactsPageTest@6f7fd0e6]" name="ValidateContactlabelTest" duration-ms="42" started-at="2020-07-18T09:55:41Z" finished-at="2020-07-18T09:55:41Z">
+        <test-method status="PASS" signature="ValidateHomepageTitleTest()[pri:1, instance:automation.testcases.HomepageTest@6f7fd0e6]" name="ValidateHomepageTitleTest" duration-ms="10" started-at="2020-07-18T17:54:35Z" finished-at="2020-07-18T17:54:35Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateContactlabelTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:automation.testcases.ContactsPageTest@6f7fd0e6]" name="TearDown" is-config="true" duration-ms="680" started-at="2020-07-18T09:55:41Z" finished-at="2020-07-18T09:55:42Z">
+        </test-method> <!-- ValidateHomepageTitleTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:automation.testcases.HomepageTest@6f7fd0e6]" name="TearDown" is-config="true" duration-ms="646" started-at="2020-07-18T17:54:35Z" finished-at="2020-07-18T17:54:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:automation.testcases.ContactsPageTest@6f7fd0e6]" name="setup" is-config="true" duration-ms="35001" started-at="2020-07-18T09:55:42Z" finished-at="2020-07-18T09:56:17Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:automation.testcases.HomepageTest@6f7fd0e6]" name="setup" is-config="true" duration-ms="16831" started-at="2020-07-18T17:54:36Z" finished-at="2020-07-18T17:54:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="selectContactsTest()[pri:2, instance:automation.testcases.ContactsPageTest@6f7fd0e6]" name="selectContactsTest" duration-ms="25" started-at="2020-07-18T09:56:17Z" finished-at="2020-07-18T09:56:17Z">
-          <exception class="org.openqa.selenium.InvalidSelectorException">
-            <message>
-              <![CDATA[invalid selector: Unable to locate an element with the xpath expression //a[Contains(text(),'abc def')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[Contains(text(),'abc def')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']' is not a valid XPath expression.
-  (Session info: chrome=83.0.4103.116)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'IMCBCP125-TXD', ip: '192.168.43.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CHANCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57460}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5d7440bd5b467e8fa7bde4a83a67969f
-*** Element info: {Using=xpath, value=//a[Contains(text(),'abc def')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //a[Contains(text(),'abc def')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id'] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//a[Contains(text(),'abc def')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']' is not a valid XPath expression.
-  (Session info: chrome=83.0.4103.116)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/invalid_selector_exception.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'IMCBCP125-TXD', ip: '192.168.43.36', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_221'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.116, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: C:\Users\CHANCH~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57460}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5d7440bd5b467e8fa7bde4a83a67969f
-*** Element info: {Using=xpath, value=//a[Contains(text(),'abc def')]//parent::td[@class='datalistrow']//preceding-sibling::td[@class='datalistrow']//input[@name='contact_id']}
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at automation.pages.Contactpage.selectContactsByName(Contactpage.java:26)
-at automation.testcases.ContactsPageTest.selectContactsTest(ContactsPageTest.java:54)
-at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-at java.lang.reflect.Method.invoke(Unknown Source)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidSelectorException -->
+        <test-method status="PASS" signature="ValidateUsernameDisplayTest()[pri:2, instance:automation.testcases.HomepageTest@6f7fd0e6]" name="ValidateUsernameDisplayTest" duration-ms="67" started-at="2020-07-18T17:54:53Z" finished-at="2020-07-18T17:54:53Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- selectContactsTest -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:automation.testcases.ContactsPageTest@6f7fd0e6]" name="TearDown" is-config="true" duration-ms="663" started-at="2020-07-18T09:56:17Z" finished-at="2020-07-18T09:56:18Z">
+        </test-method> <!-- ValidateUsernameDisplayTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:automation.testcases.HomepageTest@6f7fd0e6]" name="TearDown" is-config="true" duration-ms="638" started-at="2020-07-18T17:54:53Z" finished-at="2020-07-18T17:54:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
-      </class> <!-- automation.testcases.ContactsPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:automation.testcases.HomepageTest@6f7fd0e6]" name="setup" is-config="true" duration-ms="15812" started-at="2020-07-18T17:54:54Z" finished-at="2020-07-18T17:55:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="VerifyClickonContactsLinkTest()[pri:3, instance:automation.testcases.HomepageTest@6f7fd0e6]" name="VerifyClickonContactsLinkTest" duration-ms="2984" started-at="2020-07-18T17:55:09Z" finished-at="2020-07-18T17:55:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyClickonContactsLinkTest -->
+        <test-method status="PASS" signature="TearDown()[pri:0, instance:automation.testcases.HomepageTest@6f7fd0e6]" name="TearDown" is-config="true" duration-ms="648" started-at="2020-07-18T17:55:12Z" finished-at="2020-07-18T17:55:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- automation.testcases.HomepageTest -->
+    </test> <!-- CRM Application Test Sanity -->
+  </suite> <!-- CRM automation Test suite -->
 </testng-results>
